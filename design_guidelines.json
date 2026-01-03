@@ -1,0 +1,210 @@
+{
+  "identity": {
+    "persona": "E1",
+    "archetype": "Soft Utility",
+    "tone": "Professional, Clean, Efficient, Frictionless",
+    "principles": [
+      "Fusion over Imitation",
+      "Emotion First",
+      "Content is King",
+      "Zoom In",
+      "Negative Space",
+      "Contrast"
+    ]
+  },
+  "typography": {
+    "font_family": {
+      "headings": "Manrope, sans-serif",
+      "body": "IBM Plex Sans, sans-serif",
+      "mono": "JetBrains Mono, monospace"
+    },
+    "weights": {
+      "light": 300,
+      "regular": 400,
+      "medium": 500,
+      "semibold": 600,
+      "bold": 700
+    },
+    "usage": {
+      "h1": "text-4xl font-semibold tracking-tight text-foreground",
+      "h2": "text-3xl font-medium tracking-tight text-foreground",
+      "h3": "text-2xl font-medium text-foreground",
+      "body": "text-base font-normal leading-relaxed text-muted-foreground",
+      "small": "text-sm font-medium text-muted-foreground",
+      "label": "text-xs font-bold uppercase tracking-wider text-muted-foreground"
+    },
+    "imports": [
+      "@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400&display=swap');"
+    ]
+  },
+  "colors": {
+    "palette": {
+      "light": {
+        "background": "#F9FAFB",
+        "foreground": "#18181B",
+        "card": "#FFFFFF",
+        "card_foreground": "#18181B",
+        "popover": "#FFFFFF",
+        "popover_foreground": "#18181B",
+        "primary": "#18181B",
+        "primary_foreground": "#FAFAFA",
+        "secondary": "#F4F4F5",
+        "secondary_foreground": "#18181B",
+        "muted": "#F4F4F5",
+        "muted_foreground": "#71717A",
+        "accent": "#F4F4F5",
+        "accent_foreground": "#18181B",
+        "destructive": "#EF4444",
+        "destructive_foreground": "#FAFAFA",
+        "border": "#E4E4E7",
+        "input": "#E4E4E7",
+        "ring": "#18181B"
+      },
+      "dark": {
+        "background": "#09090B",
+        "foreground": "#FAFAFA",
+        "card": "#18181B",
+        "card_foreground": "#FAFAFA",
+        "popover": "#18181B",
+        "popover_foreground": "#FAFAFA",
+        "primary": "#FAFAFA",
+        "primary_foreground": "#18181B",
+        "secondary": "#27272A",
+        "secondary_foreground": "#FAFAFA",
+        "muted": "#27272A",
+        "muted_foreground": "#A1A1AA",
+        "accent": "#27272A",
+        "accent_foreground": "#FAFAFA",
+        "destructive": "#7F1D1D",
+        "destructive_foreground": "#FAFAFA",
+        "border": "#27272A",
+        "input": "#27272A",
+        "ring": "#D4D4D8"
+      }
+    },
+    "status": {
+      "open": {
+        "bg": "bg-blue-100 dark:bg-blue-900/30",
+        "text": "text-blue-700 dark:text-blue-300",
+        "border": "border-blue-200 dark:border-blue-800"
+      },
+      "in_progress": {
+        "bg": "bg-amber-100 dark:bg-amber-900/30",
+        "text": "text-amber-700 dark:text-amber-300",
+        "border": "border-amber-200 dark:border-amber-800"
+      },
+      "done": {
+        "bg": "bg-emerald-100 dark:bg-emerald-900/30",
+        "text": "text-emerald-700 dark:text-emerald-300",
+        "border": "border-emerald-200 dark:border-emerald-800"
+      }
+    }
+  },
+  "layout": {
+    "spacing": {
+      "container_padding": "p-6 md:p-8 lg:p-12",
+      "section_gap": "gap-8",
+      "item_gap": "gap-4"
+    },
+    "grids": {
+      "dashboard": "grid grid-cols-1 md:grid-cols-12 gap-6",
+      "card_grid": "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+    },
+    "containers": {
+      "main": "min-h-screen bg-background font-sans antialiased",
+      "dashboard_wrapper": "flex h-screen overflow-hidden bg-background",
+      "sidebar": "hidden md:flex w-64 flex-col border-r bg-card",
+      "content_area": "flex-1 overflow-y-auto p-8"
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "rounded-md bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 transition-all duration-200 shadow-sm hover:shadow-md active:scale-95",
+      "secondary": "rounded-md bg-secondary text-secondary-foreground hover:bg-secondary/80 h-10 px-4 py-2 transition-all duration-200",
+      "ghost": "rounded-md hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 transition-colors duration-200",
+      "outline": "rounded-md border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 transition-all duration-200"
+    },
+    "cards": {
+      "base": "rounded-xl border bg-card text-card-foreground shadow-sm transition-all duration-200 hover:shadow-md hover:border-primary/20",
+      "interactive": "cursor-pointer hover:-translate-y-1"
+    },
+    "inputs": {
+      "base": "flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 transition-all duration-200"
+    }
+  },
+  "motion": {
+    "transitions": {
+      "default": "transition-all duration-200 ease-in-out",
+      "slow": "transition-all duration-500 ease-in-out"
+    },
+    "animations": {
+      "fade_in": {
+        "initial": { "opacity": 0 },
+        "animate": { "opacity": 1 },
+        "exit": { "opacity": 0 }
+      },
+      "slide_up": {
+        "initial": { "opacity": 0, "y": 20 },
+        "animate": { "opacity": 1, "y": 0 },
+        "exit": { "opacity": 0, "y": 20 }
+      },
+      "stagger_children": {
+        "animate": { "transition": { "staggerChildren": 0.1 } }
+      }
+    }
+  },
+  "assets": {
+    "images": {
+      "auth_background": {
+        "url": "https://images.unsplash.com/photo-1759960034404-6177700c19ec?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2MzR8MHwxfHNlYXJjaHwxfHxtaW5pbWFsaXN0JTIwYWJzdHJhY3QlMjBnZW9tZXRyaWMlMjBzaGFwZXMlMjBwcm9kdWN0aXZpdHl8ZW58MHx8fHwxNzY3NDU2NzU3fDA&ixlib=rb-4.1.0&q=85",
+        "alt": "Abstract geometric structure",
+        "category": "auth"
+      },
+      "empty_state": {
+        "url": "https://images.unsplash.com/photo-1581087659125-322b6be59e99?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2MzR8MHwxfHNlYXJjaHwzfHxtaW5pbWFsaXN0JTIwYWJzdHJhY3QlMjBnZW9tZXRyaWMlMjBzaGFwZXMlMjBwcm9kdWN0aXZpdHl8ZW58MHx8fHwxNzY3NDU2NzU3fDA&ixlib=rb-4.1.0&q=85",
+        "alt": "Minimalist triangle illustration",
+        "category": "empty_state"
+      }
+    },
+    "icons": {
+      "library": "lucide-react",
+      "preferred": ["LayoutDashboard", "CheckSquare", "Plus", "Settings", "LogOut", "Search", "Filter", "User", "Moon", "Sun", "ChevronRight", "MoreVertical", "Calendar", "Clock"]
+    }
+  },
+  "accessibility": {
+    "rules": [
+      "Ensure text contrast ratio of at least 4.5:1",
+      "Use semantic HTML elements",
+      "Provide aria-labels for icon-only buttons",
+      "Support keyboard navigation for all interactive elements",
+      "Respect prefers-reduced-motion"
+    ],
+    "testing": {
+      "attribute": "data-testid",
+      "format": "kebab-case"
+    }
+  },
+  "instructions_to_main_agent": [
+    "1. SETUP: Install 'lucide-react', 'framer-motion', 'date-fns', 'clsx', 'tailwind-merge' if not present.",
+    "2. THEME: Implement the dark/light mode toggle using a ThemeProvider context.",
+    "3. LAYOUT: Create a 'DashboardLayout' component that includes the Sidebar and Topbar. Use the 'Control Room' grid strategy for the dashboard content.",
+    "4. AUTH: Build '/signin' and '/signup' pages using a split-screen layout. Left side form, right side 'auth_background' image.",
+    "5. COMPONENTS: Customize Shadcn components in 'src/components/ui' to match the 'Soft Utility' aesthetic (rounded-md, subtle borders).",
+    "6. STATE: Use Redux Toolkit for global state (auth, tasks).",
+    "7. API: Create an 'api' service using 'axios' or 'fetch' with an interceptor to handle JWT tokens.",
+    "8. CRUD: Implement full CRUD for tasks. Use a modal (Dialog) for creating/editing tasks to maintain context.",
+    "9. FILTERING: Create a robust filter panel (Status, Search) that updates the task list in real-time.",
+    "10. TESTING: Add 'data-testid' to all buttons, inputs, and key containers."
+  ],
+  "universal_guidelines": [
+    "Avoid generic centered layouts. Use asymmetry and negative space.",
+    "Dark colors look good when used independently without gradients. DO NOT use dark colors as gradients.",
+    "Create depth through layered design elements with z-index hierarchy.",
+    "Use glass-morphism effects with backdrop filters (12-24px blur) for overlays and sticky headers.",
+    "Every interaction needs micro-animations - hover states, transitions, entrance animations.",
+    "Use 2-3x more spacing than feels comfortable.",
+    "NEVER use AI assistant Emoji characters for icons.",
+    "Components MUST use named exports.",
+    "Pages MUST use default exports."
+  ]
+}
