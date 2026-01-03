@@ -32,6 +32,7 @@ export default function DashboardPage() {
 
   useEffect(() => {
     fetchTasks();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [filters]);
 
   const filteredTasks = tasks.filter((task) => {
