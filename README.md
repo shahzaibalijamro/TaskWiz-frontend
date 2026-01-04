@@ -25,6 +25,15 @@ Frontend application for the Task Management System, providing a responsive UI f
 - Responsive UI
 
 
+## Screenshots
+
+![App Screenshot](https://res.cloudinary.com/dacvedc6z/image/upload/v1767525930/Screenshot_2026-01-04_162504_lqekbx.png)
+
+![App Screenshot](https://res.cloudinary.com/dacvedc6z/image/upload/v1767525924/Screenshot_2026-01-04_162441_yu1oig.png)
+
+![App Screenshot](https://res.cloudinary.com/dacvedc6z/image/upload/v1767525642/Screenshot_2026-01-04_161822_mjv2im.png)
+
+
 ## Folder structure
 ```tree
 public/
