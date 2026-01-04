@@ -1,16 +1,71 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Task Management System – Frontend
 
-Currently, two official plugins are available:
+Frontend application for the Task Management System, providing a responsive UI for user authentication and task management while communicating with the backend REST API.
+## Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React
+- Javascript
+- Vite
+- Tailwind CSS
+- Axios
+- Netlify (For deployment)
 
-## React Compiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Features
 
-## Expanding the ESLint configuration
+- User authentication (login & signup)
+- Protected routes based on authentication state
+- Create, update, delete tasks
+- Task status updates
+- Responsive UI
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+## Screenshots
+
+![App Screenshot](https://res.cloudinary.com/dacvedc6z/image/upload/v1767527452/Screenshot_2026-01-04_162504_lqgc2c.jpg)
+
+![App Screenshot](https://res.cloudinary.com/dacvedc6z/image/upload/v1767525924/Screenshot_2026-01-04_162441_yu1oig.png)
+
+![App Screenshot](https://res.cloudinary.com/dacvedc6z/image/upload/v1767525642/Screenshot_2026-01-04_161822_mjv2im.png)
+
+
+## Folder structure
+```tree
+public/
+src/
+├─ components/
+├─ context/
+├─ hooks/
+├─ lib/
+├─ pages/
+├─ services/
+├─ App.css
+└─ App.jsx
+└─ index.css
+└─ main.jsx
+```````
+
+
+## Installation
+
+Clone my-project with github
+
+```bash
+  git clone https://github.com/shahzaibalijamro/TaskWiz-frontend.git
+  cd TaskWiz-frontend
+  npm install
+  npm run dev
+```
+
+    
+## Related
+
+Here is the backend repo of the project
+
+[Backend](https://github.com/shahzaibalijamro/task-management-system)
+
+## AI Assistance
+
+This project was developed with the assistance of Google's Emergent AI:
+https://emergent.sh
